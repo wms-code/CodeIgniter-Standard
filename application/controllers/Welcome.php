@@ -45,8 +45,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->template->set('title','welcome to CI Standard');
+		$this->template->load('layouts/main','home');
+		//$this->load->view('user/login');
 	}
+
+
 }
 
 /* End of file welcome.php */
